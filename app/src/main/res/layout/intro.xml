@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SeekBar
+        android:id="@+id/seekBar5"
+        style="@android:style/Widget.Material.Light.SeekBar"
+        android:layout_width="262dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="78dp"
+        android:indeterminate="false"
+        android:max="4"
+        android:progress="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="235dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginEnd="88dp"
+        android:text="@string/how_are_you_feeling"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/test"
+        android:layout_width="312dp"
+        android:layout_height="394dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="81dp"
+        android:contentDescription="@string/image"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/just_ok"
+        tools:ignore="ImageContrastCheck"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
